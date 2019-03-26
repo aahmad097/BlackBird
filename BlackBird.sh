@@ -183,11 +183,11 @@ voodooMagic() {
 	#ScreenShotter
 	nohup $PATH_BLACKBIRD_BASE/modules/screenShotter.sh $PG_EYEWITNESS $PATH_FLYOVER_BASE $PATH_FLYOVER_BASE/$1/urls.txt $1 $VAR_SLACK_TOKEN &
 	#PortScanner 
-	nohup $PATH_BLACKBIRD_BASE/modules/portScanner.sh $PATH_BLACKBIRD_BASE $PATH_FLYOVER_BASE $PATH_FLYOVER_BASE/$1/subdomains/all_subdomains.txt $1 $VAR_SLACK_TOKEN &
+	nohup $PATH_BLACKBIRD_BASE/modules/portScanner.sh $PATH_BLACKBIRD_BASE $PATH_FLYOVER_BASE $PATH_FLYOVER_BASE$1/subdomains/all_subdomains.txt $1 $VAR_SLACK_TOKEN &
 	#FileEnumerator
-	nohup $PATH_BLACKBIRD_BASE/modules/configfileDiscovery.sh $PG_MEG $FILE_MEG_WORDLIST $PATH_FLYOVER_BASE/$1/urls.txt $1 $VAR_SLACK_TOKEN $PATH_FLYOVER_BASE &
+	nohup $PATH_BLACKBIRD_BASE/modules/configfileDiscovery.sh $PG_MEG $FILE_MEG_WORDLIST $PATH_FLYOVER_BASE$1/urls.txt $1 $VAR_SLACK_TOKEN $PATH_FLYOVER_BASE &
 	#BruteForcer
-	nohup $PATH_BLACKBIRD_BASE/modules/bruteforcer.sh $PG_DIRSEARCH $PATH_FLYOVER_BASE/$1/subdomains/all_subdomains.txt $1 $PATH_FLYOVER_BASE $VAR_SLACK_TOKEN &
+	nohup $PATH_BLACKBIRD_BASE/modules/bruteforcer.sh $PG_DIRSEARCH $PATH_FLYOVER_BASE$1/subdomains/all_subdomains.txt $1 $PATH_FLYOVER_BASE $VAR_SLACK_TOKEN &
 	# --- Good Bye Page --- #
 	
 	clear
