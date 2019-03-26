@@ -23,7 +23,7 @@ slack-cli -t $SLACK_TOKEN -d blackbird-output "Passive and Active Port Scanners 
 while read DOMAIN
 do
 
- 	$PATH_BLACKBIRD_BASEmodules/shodan_api.py -d $DOMAIN >> $PATH_FLYOVER_BASE$DomainpassivePortScanning/passiveOutput.txt
+ 	$PATH_BLACKBIRD_BASE/modules/shodan_api.py -d $DOMAIN >> $PATH_FLYOVER_BASE$Domain/passivePortScanner/passiveOutput.txt
 
 done < $InFile
 
