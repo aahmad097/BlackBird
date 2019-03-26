@@ -1,0 +1,25 @@
+# -- Note that prefixes are required for validation. -- #
+# -- To add new prefixes for validation, edit read_config() and check_config() -- #
+# -- Any other values here will be added as a variable (e.g., $NAME=VALUE) but no valiation will occur --#
+
+# -- Variables -- #
+VAR_SLACK_TOKEN=""
+VAR_SHODAN_KEY=""
+
+# -- Paths  -- #
+PATH_FLYOVER_BASE=""
+
+# -- Files -- #
+FILE_MEG_WORDLIST=""
+FILE_SUBDOMAIN_WORDLIST=""
+FILE_RESOLVER_WORDLIST=""
+
+# -- Programs -- #
+PG_SLACK_CLI=""
+PG_DIRSEARCH=""
+PG_SUBLISTER=""
+PG_SUBFINDER=""
+PG_EYEWITNESS=""
+PG_MEG=""
+PG_SUBBRUTE=""
+
