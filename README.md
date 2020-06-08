@@ -2,7 +2,7 @@
 
 Blackbird was designed to automate and handle the heavy lifting of recon for large domains. It currently uses the following tools to do the following functionalities : 
 
-- Subdomain Scrabing via Subfinder and Sublister
+- Subdomain Scraping via Subfinder and Sublister
 - Subdomain Bruteforcing via MassDNS
 - Screenshotting via Eyewitness 
 - 'Passive portscanning' via shodan
